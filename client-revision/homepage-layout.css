@@ -1,0 +1,80 @@
+/* Local campaign presentation. Approved content, artwork and behavior are unchanged. */
+.homepage{--page-width:1560px;--gutter:clamp(36px,4vw,72px);--edge:max(var(--gutter),calc((100vw - var(--page-width))/2 + var(--gutter)));background:#080808}
+.homepage .header{position:relative;height:84px;padding:0 var(--edge);background:#080808;border-color:var(--line)}
+.homepage .header nav{font-size:11px;gap:22px}
+.homepage .section{max-width:1560px;margin-inline:auto;padding:104px var(--gutter)}
+.homepage h2{font-size:clamp(48px,4.5vw,80px);line-height:1.02}
+.homepage .eyebrow{font-size:12px;letter-spacing:.17em;line-height:1.6;margin-bottom:24px}
+.homepage .button{min-height:54px;padding:16px 24px;font-size:13px;letter-spacing:.09em}
+.homepage .immersive{overflow:visible}
+.homepage .hero{height:auto;min-height:calc(100svh - 84px);max-height:none;display:grid;grid-template-columns:54% 46%;align-items:center;padding:0;background:#080808}
+.homepage .hero>.scene{position:absolute;inset:0;width:100%;height:100%;max-width:none;margin:0}
+.homepage .hero>.scene img{width:100%;height:100%;object-fit:contain;object-position:48% 50%}
+.homepage .hero:after{background:linear-gradient(90deg,transparent 45%,#08080830 65%,#08080870)}
+.homepage .hero>.scene:before{display:none}
+.homepage .hero-copy{grid-column:2;margin:0;width:100%;max-width:720px;padding:36px var(--gutter) 62px 24px;text-align:left}
+.homepage .hero h1{font-size:clamp(66px,5.4vw,108px);line-height:.97;letter-spacing:-.045em}
+.homepage .hero-copy h1 em{display:block;font-size:clamp(32px,2.7vw,52px);line-height:1.1;margin-top:18px;letter-spacing:-.025em}
+.homepage .hero-copy .strap{font:400 clamp(22px,1.7vw,34px)/1.2 Georgia,serif;letter-spacing:.025em;color:var(--ivory);margin:12px 0 24px}
+.homepage .hero-copy .body-copy{font-size:17px;line-height:1.65;max-width:480px}
+.homepage .hero-copy .actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 0}
+.homepage .hero-copy .button{width:auto;font-size:15px;padding:16px 18px}
+.homepage .scene-caption{position:absolute;inset:auto var(--edge) 20px;display:flex;justify-content:space-between;gap:24px;font-size:10px;line-height:1.5}
+/* The existing collection wrappers participate in one editorial grid. */
+.homepage .collection{max-width:none;margin:0;display:grid;grid-template-columns:minmax(0,59fr) minmax(0,41fr);grid-template-rows:auto auto;align-content:center;column-gap:0;min-height:800px;padding:72px var(--edge) 72px 0;background:#0c0b09;border-bottom:1px solid var(--line)}
+.homepage .collection .section-heading{grid-column:2;grid-row:1;display:block;margin:0;padding:0 0 28px clamp(36px,4vw,72px);max-width:650px}
+.homepage .collection .section-heading>.eyebrow{margin:0 0 20px}
+.homepage .collection .section-heading h2{font-size:clamp(50px,4.4vw,84px)}
+.homepage .collection .section-heading>p:last-child{display:block;text-align:left;font-size:15px;line-height:1.7;margin-top:22px}
+.homepage .collection .editions,.homepage .collection .edition:only-child{display:contents}
+.homepage .collection .edition>.scene{grid-column:1;grid-row:1/3;align-self:center;width:100%;overflow:visible}
+.homepage .collection .edition>.scene img{width:100%;height:auto;aspect-ratio:auto;object-fit:cover;object-position:35% 50%}
+.homepage .collection .edition-copy,.homepage .collection .edition:only-child .edition-copy{grid-column:2;grid-row:2;padding:0 0 0 clamp(36px,4vw,72px);display:flex;flex-direction:column;align-items:flex-start;max-width:650px}
+.homepage .collection .edition-copy h3{font-size:clamp(30px,2.4vw,46px);line-height:1.08;margin-bottom:24px}
+.homepage .collection .edition-copy>.eyebrow{font-size:12px;margin-bottom:16px}
+.homepage .collection .edition-copy>p:not(.eyebrow){font-size:17px;line-height:1.7;margin-bottom:28px;max-width:470px}
+.homepage .collection .edition-copy .button{margin:0}
+.homepage .reposado{display:flex;align-items:center;min-height:800px;height:auto;max-height:none;padding:56px 0;background:#080808}
+.homepage .reposado>.scene{position:absolute;inset:0;width:100%;height:100%;max-width:none;margin:0}
+.homepage .reposado>.scene img{width:100%;height:100%;object-fit:contain;object-position:65% 50%}
+.homepage .reposado:after{background:linear-gradient(90deg,#080808e8,#08080890 28%,transparent 57%)}
+.homepage .reposado-copy{width:43%;max-width:760px;margin:0;padding:32px 24px 32px var(--edge)}
+.homepage .reposado h2{font-size:clamp(54px,4.6vw,88px);line-height:1.02}
+.homepage .reposado-copy .strap{font:400 clamp(24px,2vw,32px)/1.3 Georgia,serif;color:var(--gold);letter-spacing:.015em;margin:24px 0}
+.homepage .reposado-copy>p:not(.eyebrow):not(.strap){font-size:17px;line-height:1.7;max-width:420px;margin:24px 0}
+.homepage .reposado-copy .micro{font-size:12px!important;letter-spacing:.18em}
+.homepage .craft{display:grid;min-height:780px;height:auto;max-height:none;background:#0b0b0a}
+.homepage .craft>.scene{position:absolute;inset:0}
+.homepage .craft>.scene img{object-fit:cover;object-position:50% 40%;height:100%;width:100%}
+.homepage .craft:after{background:linear-gradient(0deg,#080808f5,transparent 78%)}
+.homepage .craft-copy{align-self:end;padding:72px var(--edge);max-width:none}
+.homepage .craft h2{font-size:clamp(54px,4.5vw,86px);line-height:1.03}
+.homepage .craft-copy p:last-child{font-size:18px;line-height:1.7;max-width:660px;margin-top:28px}
+.homepage .legacy{max-width:none;display:grid;grid-template-columns:minmax(0,56fr) minmax(0,44fr);gap:0;align-items:center;padding:80px var(--edge) 80px 0;background:#0b0b0a;min-height:700px}
+.homepage .legacy>.scene{margin:0;box-shadow:none;width:100%}
+.homepage .legacy>.scene img{width:100%;height:auto;object-position:43% 50%}
+.homepage .legacy-copy{margin:0;padding:0 0 0 clamp(36px,4vw,72px);max-width:710px;background:none;border:0}
+.homepage .legacy-copy h2{font-size:clamp(46px,3.8vw,76px);line-height:1.04}
+.homepage .legacy-copy>p:not(.eyebrow){font-size:17px;line-height:1.7;margin:28px 0}
+.homepage .teaser{display:flex;flex-direction:column;align-items:center;padding:80px 0 0;background:#090909;border-top:1px solid var(--line)}
+.homepage .teaser-heading{margin:0;max-width:1400px;padding:0 var(--gutter)}
+.homepage .teaser-heading h2{font-size:clamp(62px,7vw,126px);line-height:.98}
+.homepage .teaser-heading p:last-child{font-size:18px;margin:28px 0}
+.homepage .teaser>.scene{order:1;margin:8px 0 0;width:100%}
+.homepage .teaser>.scene img{max-width:1560px;width:100%;height:auto;object-position:50% 55%;margin-inline:auto}
+.homepage .teaser-cta{order:2;margin:32px 0 64px}
+.homepage .signup{display:grid;grid-template-columns:1.15fr 1fr;gap:72px;padding-block:112px;background:radial-gradient(ellipse at top left,#f2c94c08,transparent 70%)}
+.homepage .signup h2{font-size:clamp(46px,4vw,70px);line-height:1.07}
+.homepage .signup label{font-size:12px}
+.homepage .signup-row{flex-direction:column;gap:14px}
+.homepage .signup-row input{height:58px;background:transparent;font-size:17px}
+.homepage .signup-row .button{align-self:flex-start;min-width:190px}
+.homepage .preview-note{font-size:12px;line-height:1.6}
+.homepage footer{padding:64px var(--edge) 32px}
+@media(min-width:1600px){.homepage .collection{min-height:880px}.homepage .reposado{min-height:900px}.homepage .craft{min-height:850px}}
+@media(min-width:901px) and (max-height:820px){.homepage .hero-copy{padding-block:24px 54px}.homepage .hero h1{font-size:clamp(60px,4.8vw,88px)}.homepage .hero-copy .eyebrow{margin-bottom:16px}.homepage .hero-copy h1 em{font-size:clamp(30px,2.5vw,44px)}.homepage .hero-copy .strap{margin:10px 0 18px}.homepage .hero-copy .actions{margin-top:20px}}
+@media(max-width:1200px){.homepage{--gutter:36px}.homepage .header nav{gap:12px;font-size:9px}.homepage .hero h1{font-size:64px}.homepage .hero-copy{padding-left:16px}.homepage .hero-copy .button{font-size:11px;padding-inline:14px}.homepage .collection,.homepage .legacy{padding-right:36px}.homepage .collection .section-heading,.homepage .collection .edition-copy,.homepage .collection .edition:only-child .edition-copy,.homepage .legacy-copy{padding-left:32px}.homepage .collection .section-heading h2{font-size:50px}.homepage .reposado-copy{width:46%}.homepage .reposado h2{font-size:56px}.homepage .legacy-copy h2{font-size:46px}}
+@media(max-width:900px){.homepage .header{height:76px}.homepage .hero{display:flex;flex-direction:column;min-height:0;height:auto}.homepage .hero-copy{order:0;width:100%;max-width:680px;padding:40px var(--gutter) 32px;text-align:center}.homepage .hero h1{font-size:clamp(54px,8vw,76px)}.homepage .hero-copy h1 em{font-size:clamp(30px,4vw,40px)}.homepage .hero-copy .body-copy{margin:auto}.homepage .hero-copy .actions{justify-content:center}.homepage .hero>.scene{position:relative;inset:auto;order:1;height:auto;max-width:620px;margin:0}.homepage .hero>.scene img{height:auto}.homepage .hero:after,.homepage .hero>.scene:before{display:none}.homepage .hero .scene-caption{position:relative;inset:auto;order:2;padding:24px var(--gutter);width:100%;margin:0}.homepage .collection{display:flex;flex-direction:column;min-height:0;padding:0 0 64px;align-items:stretch}.homepage .collection .edition>.scene{order:0;width:100%}.homepage .collection .section-heading{order:1;max-width:720px;width:100%;padding:40px var(--gutter) 28px;margin:auto}.homepage .collection .edition-copy,.homepage .collection .edition:only-child .edition-copy{order:2;width:100%;max-width:720px;padding:0 var(--gutter);margin:auto}.homepage .reposado{display:flex;flex-direction:column;min-height:0;padding:0 0 64px}.homepage .reposado>.scene{position:relative;inset:auto;width:100%;height:auto;max-width:620px;order:0}.homepage .reposado>.scene img{height:auto}.homepage .reposado:after{display:none}.homepage .reposado-copy{order:1;width:100%;max-width:720px;padding:40px var(--gutter) 0;text-align:left}.homepage .reposado-copy>p:not(.eyebrow):not(.strap){margin:24px 0;max-width:540px}.homepage .craft{min-height:720px}.homepage .craft-copy{padding:56px var(--gutter)}.homepage .craft h2{font-size:54px}.homepage .legacy{display:flex;flex-direction:column;min-height:0;padding:0 0 64px}.homepage .legacy-copy{padding:40px var(--gutter) 0;width:100%;max-width:720px}.homepage .signup{grid-template-columns:1fr;gap:36px;padding-block:72px}.homepage .teaser{padding-top:64px}.homepage .teaser-heading h2{font-size:clamp(58px,8vw,86px)}}
+@media(max-width:600px){.homepage{--gutter:22px}.homepage .header{padding-inline:18px}.homepage .hero-copy{padding:30px 22px 32px}.homepage .hero-copy .eyebrow{font-size:11px;margin-bottom:20px}.homepage .hero h1{font-size:clamp(52px,13vw,62px)}.homepage .hero-copy h1 em{font-size:30px;margin-top:16px}.homepage .hero-copy .strap{font-size:24px;margin:10px 0 20px}.homepage .hero-copy .body-copy{font-size:16px;line-height:1.65}.homepage .hero-copy .actions{display:grid;grid-template-columns:1fr 1fr;margin-top:24px}.homepage .hero-copy .button{font-size:12px;min-height:54px;padding:14px 10px}.homepage .scene-caption{font-size:9px}.homepage .scene-caption>a{display:none}.homepage .collection .section-heading h2{font-size:48px}.homepage .collection .section-heading>p:last-child{font-size:15px}.homepage .collection .edition-copy h3{font-size:34px}.homepage .collection .edition-copy>p:not(.eyebrow){font-size:16px}.homepage .collection .edition-copy .button{width:100%}.homepage .reposado h2{font-size:48px}.homepage .reposado-copy .strap{font-size:22px}.homepage .reposado-copy>p:not(.eyebrow):not(.strap){font-size:16px}.homepage .reposado-copy .button{width:100%}.homepage .craft{min-height:700px}.homepage .craft>.scene img{object-position:42% 40%}.homepage .craft h2{font-size:42px}.homepage .craft-copy{padding:40px 22px}.homepage .craft-copy p:last-child{font-size:16px}.homepage .legacy-copy h2{font-size:42px}.homepage .legacy-copy>p:not(.eyebrow){font-size:16px}.homepage .teaser-heading h2{font-size:48px}.homepage .teaser-heading .eyebrow{font-size:11px}.homepage .teaser-heading p:last-child{font-size:16px}.homepage .teaser-cta{max-width:calc(100% - 44px);font-size:12px}.homepage .signup h2{font-size:43px}.homepage .signup-row .button{width:100%}.homepage .section{padding-block:68px}.homepage .eyebrow{font-size:12px}.homepage .button{min-height:54px}}
+
+@media(max-width:600px){.homepage .collection,.homepage .legacy{padding-top:0;padding-bottom:68px}}
